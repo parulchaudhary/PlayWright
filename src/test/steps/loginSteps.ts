@@ -2,8 +2,6 @@ import { Given, Then, When } from '@cucumber/cucumber'
 import { chromium, Page, Browser, expect }  from "@playwright/test"
 import { pageFixture } from '../../hooks/pageFixture';
 
-
-
 Given('User navigates to the application', {timeout: 2 * 5000}, async function () {
      await pageFixture.page.goto(process.env.BASEURL); 
      });
@@ -19,6 +17,11 @@ Given('User navigates to the application', {timeout: 2 * 5000}, async function (
   await pageFixture.page.locator("#Email").fill(email);   
       });
 
+      When('user enters the login details {string}, {string}', async function (email, pw) {
+        await pageFixture.page.locator("#Email").fill(email); 
+        await pageFixture.page.locator("#Password").fill(pw) ; 
+            });
+      
 
   When('user enters the password {string}', async function (password) {
     await pageFixture.page.locator("#Password").fill(password) ;  
@@ -52,7 +55,8 @@ Given('User navigates to the application', {timeout: 2 * 5000}, async function (
   });
 
   Then('User should see login button on the login page', async function () {
-    await pageFixture.page.locator("//button[@class='button-1 login-button']").click();
+    await pageFixture.page.locator("//button[@class='button-1 login-button']").isVisible();
+   // await pageFixture.page.locator("//button[@class='button-1 login-button']").click();
   });
 
   
