@@ -6,24 +6,20 @@ import RegisterPage from '../../pages/registerPage';
 let registerPage: RegisterPage;
 
 Given('user clicks on register link', async function () {
-   // await pageFixture.page.locator("//a[@class='ico-register']").click();
-   registerPage = new RegisterPage(pageFixture.page);
+     registerPage = new RegisterPage(pageFixture.page);
    await registerPage.clickRegisterLink();
   });
 
   When('user enters the details {string}, {string}, {string}, {string}', async function (fname, lname, email, pw) {
-    await pageFixture.page.locator("#FirstName").fill(fname);  
-    await pageFixture.page.locator("#LastName").fill(lname);  
-    await pageFixture.page.locator("#Email").fill(email);  
-    await pageFixture.page.locator("#Password").fill(pw);  
-    await pageFixture.page.locator("#ConfirmPassword").fill(pw);  
+    await registerPage.fillRegistrationForm(fname, lname, email, pw);
+    
   });
 
   When('user clicks on register button', async function () {
-    await pageFixture.page.locator("#register-button").click();
+   
+    await registerPage.clickRegisterButton();
   });
 
-  Then('user should be able to see registration completed page', async function () {
-    const expectedMsg = "Your registration completed"
-    await expect (pageFixture.page.locator("//div[@class='page-body']")).toContainText(expectedMsg)
-     });
+  Then('user should be able to see message {string}', async function (expectedmsg) {
+    await registerPage.verifyRegistrationMessage(expectedmsg);
+         });
