@@ -12,14 +12,12 @@ Given('user clicks on register link', async function () {
 
   When('user enters the details {string}, {string}, {string}, {string}', async function (fname, lname, email, pw) {
     await registerPage.fillRegistrationForm(fname, lname, email, pw);
-    
-  });
+   });
 
   When('user clicks on register button', async function () {
-   
-    await registerPage.clickRegisterButton();
+       await registerPage.clickRegisterButton();
   });
 
   Then('user should be able to see message {string}', async function (expectedmsg) {
     await registerPage.verifyRegistrationMessage(expectedmsg);
-         });
+  });

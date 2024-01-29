@@ -41,6 +41,4 @@ async verifyRegistrationMessage(expectedmsg)
      await expect (this.page.locator(this.Elements.successRegisterMessage)).toContainText(expectedmsg)
    
 }
-
-
 }
