@@ -1,11 +1,14 @@
 import { Given, Then, When } from '@cucumber/cucumber'
 import {  Page, expect }  from "@playwright/test"
 import { pageFixture } from '../../hooks/pageFixture';
+import RegisterPage from '../../pages/registerPage';
 
-//let page: Page;
+let registerPage: RegisterPage;
 
 Given('user clicks on register link', async function () {
-    await pageFixture.page.locator("//a[@class='ico-register']").click();
+   // await pageFixture.page.locator("//a[@class='ico-register']").click();
+   registerPage = new RegisterPage(pageFixture.page);
+   await registerPage.clickRegisterLink();
   });
 
   When('user enters the details {string}, {string}, {string}, {string}', async function (fname, lname, email, pw) {
