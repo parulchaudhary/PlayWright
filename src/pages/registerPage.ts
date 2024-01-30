@@ -1,6 +1,9 @@
 import { Page, expect } from "playwright/test";
 
+
 export default class RegisterPage{
+
+   
 
 constructor(public page: Page)
 {
@@ -16,7 +19,8 @@ private Elements = {
     password: "#Password",
     confirmPassword: "#ConfirmPassword",
     registerButton: "#register-button",
-    successRegisterMessage: "//div[@class='page-body']"
+    successRegisterMessage: "//div[@class='page-body']",
+      
  
 }
 
@@ -39,6 +43,16 @@ async clickRegisterButton()
 async verifyRegistrationMessage(expectedmsg)
 {
      await expect (this.page.locator(this.Elements.successRegisterMessage)).toContainText(expectedmsg)
+   
+}
+async readTestData(fname, lname, email, pw)
+{
+    
+    await this.page.fill(this.Elements.firstName,fname);
+    await this.page.fill(this.Elements.lastName,lname);
+    await this.page.fill(this.Elements.email,email);
+    await this.page.fill(this.Elements.password,pw);
+    await this.page.fill(this.Elements.confirmPassword,pw);
    
 }
 }
