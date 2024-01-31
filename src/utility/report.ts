@@ -6,7 +6,7 @@ report.generate({
     reportname: "Playwright automation report",
     pageTitle: "Nopcommerce app",
     displayDuration: true,
-    launchReport: true,
+    openReportInBrowser: true,
     metadata:{
         browser: {
             name: "chrome",
