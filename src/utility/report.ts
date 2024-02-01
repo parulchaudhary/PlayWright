@@ -2,7 +2,7 @@ const report = require('multiple-cucumber-html-reporter');
 
 report.generate({
     jsonDir: "test-result",
-    reportPath: "test-result/reports/multiple-cucumber-html-report",
+    reportPath: "test-result/reports/multiple-cucumber-html-report/",
     reportname: "Playwright automation report",
     pageTitle: "Nopcommerce app",
     displayDuration: true,
