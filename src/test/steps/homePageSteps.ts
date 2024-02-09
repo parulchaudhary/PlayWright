@@ -24,3 +24,4 @@ Then('user should see the Home Page title {string}', async function (title) {
     homePage = new HomePage(pageFixture.page);
     await homePage.verifyHomePageHeader();
      });
+
