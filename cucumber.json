@@ -6,7 +6,8 @@
     "paths":[
         "src/test/features"
     ],
-    "dryRun": false,
+    "tags": "@sanity",
+       "dryRun": false,
     "require":[
         "src/test/steps/*.ts",
         "src/hooks/hooks.ts"
