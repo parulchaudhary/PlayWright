@@ -3,6 +3,8 @@ import { chromium, Browser, Page, BrowserContext,expect } from "@playwright/test
 import { pageFixture } from "./pageFixture";
 import { invokeBrowser } from "../utility/browsers/browserManager";
 import { getEnv } from "../utility/env/env";
+import { createLogger } from "winston";
+import { options } from "../utility/logger";
 
 let browser: Browser;
 let page: Page;
@@ -15,10 +17,12 @@ BeforeAll(async function() {
     
 });
 
-Before(async function() {
+Before(async function( { pickle }) {
+    const scenarioName = pickle.name + pickle.id
     context = await browser.newContext();
     page = await context.newPage();
     pageFixture.page = page;
+    pageFixture.logger = createLogger(options(scenarioName))
    
 });
 

@@ -8,12 +8,14 @@ let loginPage: LoginPage;
 
 Given('User navigates to the application', {timeout: 2 * 5000}, async function () {
      await pageFixture.page.goto(process.env.BASEURL); 
+     pageFixture.logger.info("user has navigated to the application")
      });
 
 
   Given('User clicks the login link', async function () {
     loginPage = new LoginPage(pageFixture.page);
     await loginPage.navigateToLogin();
+    pageFixture.logger.info("user has clicked on the login link in the application")
     });
 
 
