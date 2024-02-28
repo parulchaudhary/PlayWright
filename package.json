@@ -14,8 +14,9 @@
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^10.3.1",
-    "@playwright/test": "^1.41.1",
-    "@types/node": "^20.11.6",
+    "@playwright/test": "^1.42.0",
+    "@types/node": "^20.11.17",
+    "allure-playwright": "^2.13.0",
     "cross-env": "^7.0.3",
     "cucumber-html-reporter": "^7.1.1",
     "dotenv": "^16.4.1",
@@ -24,8 +25,15 @@
     "ts-node": "^10.9.2"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@types/pg": "^8.11.0",
+    "axios": "^1.6.7",
+    "chai": "^5.1.0",
+    "mocha": "^10.3.0",
+    "mochawesome": "^7.1.3",
     "pg": "^8.11.3",
+    "properties-reader": "^2.3.0",
+    "rimraf": "^5.0.5",
     "uuid": "^9.0.1"
   }
 }

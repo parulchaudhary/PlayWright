@@ -35,5 +35,7 @@ After(async function({pickle} ) {
 
 AfterAll(async function() {
     await browser.close();
+    
       
 });
+
