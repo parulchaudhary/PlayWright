@@ -4,7 +4,7 @@ import { pageFixture } from "./pageFixture";
 import { invokeBrowser } from "../utility/browsers/browserManager";
 import { getEnv } from "../utility/env/env";
 import { createLogger } from "winston";
-import { options } from "../utility/logger";
+import { options } from "../utility/log/logger";
 
 let browser: Browser;
 let page: Page;
@@ -21,9 +21,10 @@ Before(async function( { pickle }) {
     const scenarioName = pickle.name + pickle.id
     context = await browser.newContext();
     page = await context.newPage();
+    
     pageFixture.page = page;
     pageFixture.logger = createLogger(options(scenarioName))
-   
+     
 });
 
 After(async function({pickle} ) {

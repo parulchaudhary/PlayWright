@@ -18,9 +18,11 @@
     "format": [
         "html:test-result/reports/cucumber-report/cucumber-report.html",
         "json:test-result/reports/cucumber-report/cucumber-report.json",
-        "rerun:@rerun.txt"
+       "rerun:@rerun.txt"
     ],
+    
     "parallel": 2
+   
    
 
     },
@@ -45,3 +47,4 @@
 
     }
 }
+

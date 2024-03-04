@@ -2,6 +2,7 @@ import { Given, Then, When } from '@cucumber/cucumber'
 import { chromium, Page, Browser, expect }  from "@playwright/test"
 import { pageFixture } from '../../hooks/pageFixture';
 import LoginPage from '../../pages/loginPage';
+import { log4jsconfig } from '../../utility/log/log4jConfig/log4jsconfig';
 
 
 let loginPage: LoginPage;
@@ -9,6 +10,7 @@ let loginPage: LoginPage;
 Given('User navigates to the application', {timeout: 2 * 5000}, async function () {
      await pageFixture.page.goto(process.env.BASEURL); 
      pageFixture.logger.info("user has navigated to the application")
+     log4jsconfig.Log().debug("logging via log4j application launched");
      });
 
 
@@ -16,6 +18,7 @@ Given('User navigates to the application', {timeout: 2 * 5000}, async function (
     loginPage = new LoginPage(pageFixture.page);
     await loginPage.navigateToLogin();
     pageFixture.logger.info("user has clicked on the login link in the application")
+    log4jsconfig.Log().debug("logging via log4j application login");
     });
 
 

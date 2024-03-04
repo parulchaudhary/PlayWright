@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 984877800
+              "duration": 924684699
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 4,
             "name": "User navigates to the application",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:9"
+              "location": "src\\test\\steps\\loginSteps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1621295100
+              "duration": 1663015300
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 30,
             "name": "User clicks the login link",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:15"
+              "location": "src\\test\\steps\\loginSteps.ts:17"
             },
             "result": {
               "status": "passed",
-              "duration": 467655300
+              "duration": 1163293999
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 31,
             "name": "user clicks on forgot password link",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:37"
+              "location": "src\\test\\steps\\loginSteps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 524993700
+              "duration": 517803299
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 32,
             "name": "User should navigate to password recovery page \"nopCommerce demo store. Password Recovery\"",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:41"
+              "location": "src\\test\\steps\\loginSteps.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 37109600
+              "duration": 45041400
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 158230400
+              "duration": 149958799
             },
             "embeddings": [
               {
