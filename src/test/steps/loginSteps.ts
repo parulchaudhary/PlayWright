@@ -25,9 +25,6 @@ Given('User navigates to the application', {timeout: 2 * 5000}, async function (
       When('user enters the login details {string}, {string}', async function (email, pw) {
         await loginPage.enterCredentials(email,pw);
            });
-      
-
-
 
   When('user clicks on the login Page', async function () {
     await loginPage.doLogin();

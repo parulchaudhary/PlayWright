@@ -10,3 +10,44 @@
 [2024-03-01T11:00:03.020] [DEBUG] default - logging via log4j application login
 [2024-03-01T11:02:07.105] [DEBUG] default - logging via log4j application launched
 [2024-03-01T11:02:08.269] [DEBUG] default - logging via log4j application login
+[2024-03-15T10:40:51.791] [DEBUG] default - logging via log4j application launched
+[2024-03-15T10:40:52.970] [DEBUG] default - logging via log4j application login
+[2024-03-15T10:41:25.127] [DEBUG] default - logging via log4j application launched
+[2024-03-15T10:41:25.695] [DEBUG] default - logging via log4j application login
+[2024-03-18T19:21:51.188] [DEBUG] default - logging via log4j application launched
+[2024-03-18T19:21:52.575] [DEBUG] default - logging via log4j application login
+[2024-03-18T19:25:06.746] [DEBUG] default - logging via log4j application launched
+[2024-03-18T19:29:01.265] [DEBUG] default - logging via log4j application launched
+[2024-03-18T19:33:24.941] [INFO] default - Given the user is on the login page
+[2024-03-18T19:39:51.716] [INFO] default - Given the user is on the login page
+[2024-03-18T19:42:11.458] [INFO] default - Given the user is on the login page
+[2024-03-18T19:43:42.771] [INFO] default - Given the user is on the login page
+[2024-03-18T19:51:12.038] [INFO] default - Given the user is on the login page
+[2024-03-18T19:56:19.414] [INFO] default - Given the user is on the login page
+[2024-03-18T20:04:13.199] [INFO] default - Given the user is on the login page
+[2024-03-18T20:09:00.388] [INFO] default - Given the user is on the login page
+[2024-03-18T20:13:58.197] [INFO] default - Given the user is on the login page
+[2024-03-18T20:16:47.071] [INFO] default - Given the user is on the login page
+[2024-03-18T20:18:07.766] [INFO] default - Given the user is on the login page
+[2024-03-18T20:19:24.808] [INFO] default - Given the user is on the login page
+[2024-03-18T20:21:59.025] [INFO] default - Given the user is on the login page
+[2024-03-18T20:22:51.665] [INFO] default - Given the user is on the login page
+[2024-03-18T20:25:54.789] [INFO] default - Given the user is on the login page
+[2024-03-18T20:29:51.400] [INFO] default - Given the user is on the login page
+[2024-03-18T20:31:30.503] [INFO] default - Given the user is on the login page
+[2024-03-19T11:31:36.466] [INFO] default - Given the user is on the login page
+[2024-03-19T11:32:29.090] [INFO] default - Given the user is on the login page
+[2024-03-19T11:39:05.105] [INFO] default - Given the user is on the login page
+[2024-03-20T12:42:53.215] [INFO] default - Given the user is on the login page
+[2024-03-20T13:26:48.027] [INFO] default - Given the user is on the login page
+[2024-03-20T13:26:48.122] [INFO] default - Given the user is on the login page
+[2024-03-20T13:29:51.186] [INFO] default - Given the user is on the login page
+[2024-03-20T13:29:51.241] [INFO] default - Given the user is on the login page
+[2024-03-20T13:31:28.521] [INFO] default - Given the user is on the login page
+[2024-03-20T13:31:28.766] [INFO] default - Given the user is on the login page
+[2024-03-20T13:33:18.694] [INFO] default - Given the user is on the login page
+[2024-03-20T13:33:18.766] [INFO] default - Given the user is on the login page
+[2024-03-20T13:34:26.597] [INFO] default - Given the user is on the login page
+[2024-03-20T13:34:26.631] [INFO] default - Given the user is on the login page
+[2024-03-20T13:35:57.579] [INFO] default - Given the user is on the login page
+[2024-03-20T13:35:58.684] [INFO] default - Given the user is on the login page
